@@ -2,8 +2,8 @@
 /* Desk    : Deklarasi Binary Tree secara rekursif  	*/
 /* Oleh    : ANI RAHMANI / 23501007  			*/
 /* Tgl	   : 21 / 11 / 2001	     			*/
-/* Mod     : Mohammad Rizky Maulidhan */
-/* Tgl Mod : 12 /07 / 2020 */
+/* Mod     : Faizal Abdul Hakim */
+/* Tgl Mod : 21 /07 / 2021 */
 
 #ifndef BINTREE_H
 #define BINTREE_H
