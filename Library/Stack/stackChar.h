@@ -1,3 +1,6 @@
+/* File    : StackChar.h 
+Oleh : Caturiani Pratidina Bintari*/
+
 #ifndef STACK_CHAR_H
 #define STACK_CHAR_H
 
@@ -22,34 +25,34 @@ typedef struct{
     addressStackChar top;
 }stackChar;
 
+/* Mengembalikan true jika Stack Char kosong
+I.S   : S terdefinisi.					  
+F.S   : S diketahui kosong atau tidaknya.  */
 boolean isEmptyStackChar(stackChar S);
-/* Mengembalikan true jika Stack Char kosong. */
-/* I.S   : S terdefinisi.					  */
-/* F.S   : S diketahui kosong atau tidaknya.  */
 
+/* Membuat sebuah Stack Char kosong.							 
+I.S   : S belum terdefinisi.									 
+F.S   : Menghasilkan Stack Char kosong jika alokasi berhasil. */
 void createStackChar(stackChar *S);
-/* Membuat sebuah Stack Char kosong.							 */
-/* I.S   : S belum terdefinisi.									 */
-/* F.S   : Menghasilkan Stack Char kosong jika alokasi berhasil. */
 
-addressStackChar alokasiStackChar(infotypeStackChar X);
-/* Menghasilkan address hasil alokasi Stack Char.		*/
-/* I.S   : X belum dialokasi.							*/
-/* F.S   : Menghasilkan address X yang sudah dialokasi.	*/
+/* Menghasilkan address hasil alokasi Stack Char.
+I.S   : X belum dialokasi.						
+F.S   : Menghasilkan address X yang sudah dialokasi */
+addressStackChar alokasiStackChar(infotypeStackChar X
 
+/* Membebaskan address P.
+I.S   : P sudah dialokasi.
+F.S   : P berhasil didealokasi.	*/
 void dealokasiStackChar(addressStackChar P);
-/* Membebaskan address P.			*/
-/* I.S   : P sudah dialokasi.		*/
-/* F.S   : P berhasil didealokasi.	*/
 
+/* Melakukan push elemen ke bagian Top Stack Char
+I.S   : S terdefinisi.							
+F.S   : Elemen X ditambahkan ke bagian Top S.	*/ 
 void pushStackChar(stackChar *S, infotypeStackChar X);
-/* Melakukan push elemen ke bagian Top Stack Char.	*/
-/* I.S   : S terdefinisi.							*/
-/* F.S   : Elemen X ditambahkan ke bagian Top S.	*/ 
 
-void popStackChar(stackChar *S, infotypeStackChar *X);
-/* Menghapus elemen dari bagian Top Stack Char.  */
-/* I.S   : Top S tidak kosong dan X elemen S.	 */
-/* F.S   : Elemen X dihapuskan dari Top S.		 */ 
+/* Menghapus elemen dari bagian Top Stack Char.  
+I.S   : Top S tidak kosong dan X elemen S.	 
+F.S   : Elemen X dihapuskan dari Top S.		 */ 
+void popStackChar(stackChar *S, infotypeStackChar *X); 
 
 #endif
