@@ -16,7 +16,7 @@ Oleh : Caturiani Pratidina Bintari*/
 typedef char infotypeStackChar;
 typedef struct tElmSC *addressStackChar;
 
-typedef struct tElmSC{
+typedef struct tElmSC{ 
     infotypeStackChar info;
     addressStackChar next;
 }elmStackChar;
