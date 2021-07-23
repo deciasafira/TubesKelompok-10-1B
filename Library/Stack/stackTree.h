@@ -1,3 +1,7 @@
+/* File    : stackTree.h 	*/
+/* Oleh    : Decia Safira Alfitri / 201524039  			*/
+/* Tgl	   : 21 / 7 / 2021	     			*/
+
 #ifndef STACK_TREE_H
 #define STACK_TREE_H
 
