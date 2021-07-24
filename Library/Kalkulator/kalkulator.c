@@ -124,7 +124,7 @@ void about(){
 	system("CLS");
 	printf("\n\t\t\t*** Tentang Aplikasi ***\n");
 	puts("Program aplikasi kalkulator ini dibuat oleh Kelompok Kalkulaten untuk memenuhi salah satu tugas besar");
-	puts("Struktur Data dan Algoritma Praktikum. Berikut anggota kalkulaten :\n")
+	puts("Struktur Data dan Algoritma Praktikum. Berikut anggota kalkulaten :\n");
 	puts("1. Caturiani Pratidina Bintari\n");
 	puts("2. Decia Safira Alfitri\n");
 	puts("3. Faizal Abdul Hakim\n");
@@ -142,7 +142,7 @@ int mainMenu() {
 		puts("\n==================== KALKULATOR KALKULATEN ===================");
 		puts("\n*** MENU ***\n");
 		puts("1. Kalkulator");
-		puts("2. Cara Menggunakan Aplikasi")
+		puts("2. Cara Menggunakan Aplikasi");
 		puts("3. Tentang");
 		puts("4. Exit");
 		puts("Masukkan pilihan sesuai nomor : ");
