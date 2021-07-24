@@ -39,7 +39,7 @@ void createStackChar(stackChar *S);
 /* Mengalokasikan addres StackChar
 I.S   : X belum dialokasi.						
 F.S   : Menghasilkan address X yang sudah dialokasi */
-addressStackChar alokasiStackChar(infotypeStackChar X
+addressStackChar alokasiStackChar(infotypeStackChar X);
 
 /* Membebaskan address P.
 I.S   : P sudah dialokasi.
