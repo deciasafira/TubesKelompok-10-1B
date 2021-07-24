@@ -94,20 +94,7 @@ void kalkulatorMenu() {
 	BinTree ex;
 	
 	system("cls");
-	//system("MODE 69,20");
-	puts("\n\t\t\t# KALKULATOR #\n");
-	printf("PETUNJUK : ");
-	printf("\n1. Gunakan simbol '^' --> melakukan operasi perpangkatan.");
-	printf("\n2. Gunakan simbol '*' atau 'x' --> melakukan operasi perkalian.");
-	printf("\n3. Gunakan simbol ':' atau '/' --> melakukan operasi pembagian.");
-	printf("\n4. Gunakan simbol '+' --> melakukan operasi penjumlahan.");
-	printf("\n5. Gunakan simbol '-' --> melakukan operasi pengurangan.");
-	printf("\n6. Dapat menambahkan '(' dan ')' ke dalam operasi perhitungan.");
-	printf("\n7. Bilangan yang digunakan dalam operasi perhitungan adalah bilangan bulat \n (bilangan negatif, nol, dan bilangan positif) dan bilangan desimal.");
-	printf("\n\n");
-	system("PAUSE");
-	system("cls");
-	puts("\n\t\t\t# KALKULATOR #\n");
+	puts("\n\t\t\t*** Kalkulator ***\n");
 	printf("LAKUKAN PERHITUNGAN :\n\n"); scanf(" %s",input);
 	InfixToPostfix(input, postfix);
 	printf("\n");
@@ -115,12 +102,32 @@ void kalkulatorMenu() {
 	printf("= %.2f\n", CalculateTree(ex)); 
 }
 
+void petunjuk(){
+	system("CLS");
+	printf("\n\t\t\t*** Cara Menggunakan Aplikasi ***\n");
+	printf("\n1. Bilangan yang digunakan dalam kalkulator ini adalah bilangan bulat. \n (bilangan negatif, nol, dan bilangan positif) dan bilangan desimal.");
+	printf("\n2. Operator yang dapat digunakan :");
+	printf("\t a) + (pertambahan)");
+	printf("\t b) - (pengurangan)");
+	printf("\t c) * atau x (pengkalian)");
+	printf("\t d) : atau / (pembagian)");
+	printf("\t e) ^ (perpangkatan)");
+	printf("\n3. Dapat menambahkan '(' dan ')' ke dalam operasi perhitungan");
+	printf("\n4. Setiap perhitungan akan tersimpan pada riwayat kalkulator.");
+	printf("\n5. Setiap perhitungan yang error tidak akan dimasukan pada rekapan.");
+	printf("\n6. Riwayat perhitungan hanya dapat dihapus ketika user memilih menu hapus riwayat");
+	printf("\n\n");
+
+}
+
 void about(){
 	system("CLS");
-	printf("Tentang Aplikasi\n");
-	puts("1. \n");
-	puts("2. \n");
-	puts("3. \n");
+	printf("\n\t\t\t*** Tentang Aplikasi ***\n");
+	puts("Program aplikasi kalkulator ini dibuat oleh Kelompok Kalkulaten untuk memenuhi salah satu tugas besar");
+	puts("Struktur Data dan Algoritma Praktikum. Berikut anggota kalkulaten :\n")
+	puts("1. Caturiani Pratidina Bintari\n");
+	puts("2. Decia Safira Alfitri\n");
+	puts("3. Faizal Abdul Hakim\n");
 }
 
 int mainMenu() {
@@ -132,20 +139,24 @@ int mainMenu() {
 	
 	while(i<=100) {
 		//system("MODE 57,20");
-		puts("\n=`=`=`=`=`=`=`=`=` APLIKASI KALULATOR `=`=`=`=`=`=`=`=`=");
-		puts("\n*** MAIN MENU ***\n");
+		puts("\n==================== KALKULATOR KALKULATEN ===================");
+		puts("\n*** MENU ***\n");
 		puts("1. Kalkulator");
-		puts("2. About");
-		puts("3. Exit");
+		puts("2. Cara Menggunakan Aplikasi")
+		puts("3. Tentang");
+		puts("4. Exit");
 		puts("Masukkan pilihan sesuai nomor : ");
 		switch(getchar()) {	
 		    case '1' :
 		    	kalkulatorMenu();
-				break;		
-			case '2' :
-				about();
+				break;	
+			case '2'	:
+				petunjuk();
 				break;
 			case '3' :
+				about();
+				break;
+			case '4' :
 				system("cls");
 				puts("\nTerima Kasih");
 				return 0;
