@@ -164,7 +164,7 @@ void hexaToDec(){
     int i = 0, value, length;
     /* Get hexadecimal value from user */
     system("CLS");
-	printf("n *** Hexadecimal To Decimal ***\n\n\n");
+	printf(" *** Hexadecimal To Decimal ***\n\n\n");
 	printf("||=======||=======||=======||\n");
 	printf("||   1   ||   2   ||   3   ||\n");
 	printf("||=======||=======||=======||\n");
