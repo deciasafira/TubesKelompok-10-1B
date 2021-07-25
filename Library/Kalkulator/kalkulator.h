@@ -3,6 +3,7 @@
 
 #include "../Tree/bintree.h"
 #include "../Stack/stackTree.h"
+#include "../kalkulatorProgrammer/kalkulatorProgrammer.h"
 
 BinTree BuildExpressionTree(infotypeTree postfix);
 /* Membuat sebuah Expression Tree dari ekspresi postfix.	*/

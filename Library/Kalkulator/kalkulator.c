@@ -129,33 +129,64 @@ void about(){
 	puts("3. Faizal Abdul Hakim\n");
 }
 
+void kalkulatorProgrammerMenu(){
+	bool repeat = true;
+
+	while (repeat)
+	{
+		system("cls");
+		puts("\n==================== KALKULATOR PROGRAMMER ===================\n\n");
+		puts("1. Konversi Desimal Ke Biner");
+		puts("2. Kembali Ke Main Menu\n");
+		puts("Masukkan pilihan sesuai nomor : ");
+		switch (getchar())
+		{
+		case '1' :
+			decToBiner();
+			break;
+		case '2' :
+			system("cls");
+			repeat = false;
+			mainMenu();
+			break;
+		default :
+			puts("\nNomor yang Anda masukkan tidak valid!");
+		}
+	}
+
+}
+
 int mainMenu() {
 	/* Menampilkan menu utama aplikasi ini.			*/
 	/* I.S   : Sembarang.							*/
 	/* F.S   : Menu utama aplikasi ditampilkan.		*/
 	
-	int i;
+	int i = 0;
 	
 	while(i<=100) {
-		//system("MODE 57,20");
+		system("COLOR E1");
 		puts("\n==================== KALKULATOR KALKULATEN ===================");
 		puts("\n*** MENU ***\n");
-		puts("1. Kalkulator");
-		puts("2. Cara Menggunakan Aplikasi");
-		puts("3. Tentang");
-		puts("4. Exit");
+		puts("1. Kalkulator");		
+		puts("2. Kalkulator Programmer");
+		puts("3. Cara Menggunakan Aplikasi");
+		puts("4. Tentang");
+		puts("5. Exit");
 		puts("Masukkan pilihan sesuai nomor : ");
 		switch(getchar()) {	
 		    case '1' :
 		    	kalkulatorMenu();
 				break;	
-			case '2'	:
+			case '2':
+				kalkulatorProgrammerMenu();
+				break;
+			case '3'	:
 				petunjuk();
 				break;
-			case '3' :
+			case '4' :
 				about();
 				break;
-			case '4' :
+			case '5' :
 				system("cls");
 				puts("\nTerima Kasih");
 				return 0;
