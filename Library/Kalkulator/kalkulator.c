@@ -135,7 +135,9 @@ void kalkulatorProgrammerMenu(){
 		system("cls");
 		puts("\n==================== KALKULATOR PROGRAMMER ===================\n\n");
 		puts("1. Konversi Desimal Ke Biner");
-		puts("2. Kembali Ke Main Menu\n");
+		puts("2. Konversi Desimal Ke Oktal");
+		puts("3. Konversi Desimal Ke Hexadecimal");
+		puts("4. Kembali Ke Main Menu\n");
 		puts("Masukkan pilihan sesuai nomor : ");
 		switch (getchar())
 		{
@@ -143,6 +145,12 @@ void kalkulatorProgrammerMenu(){
 			decToBiner();
 			break;
 		case '2' :
+			decToOctal();
+			break;
+		case '3' :
+			decToHexa();
+			break;
+		case '4' :
 			system("cls");
 			repeat = false;
 			mainMenu();
