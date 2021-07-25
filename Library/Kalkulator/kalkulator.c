@@ -89,8 +89,17 @@ void kalkulatorMenu() {
 	BinTree ex;
 	
 	system("cls");
-	puts("\n\t\t\t*** Kalkulator ***\n");
-	printf("LAKUKAN PERHITUNGAN :\n\n"); scanf(" %s",input);
+	puts("\n\t\t*** Kalkulator ***\n\n");
+	printf("||=======||=======||=======||||=======||=======||\n");
+	printf("||   1   ||   2   ||   3   ||||  Enter to back ||\n");
+	printf("||=======||=======||=======||||=======||=======||\n");
+	printf("||   4   ||   5   ||   6   ||||   *   ||   /   ||\n");
+	printf("||=======||=======||=======||||=======||=======||\n");
+	printf("||   7   ||   8   ||   9   ||||   +   ||   -   ||\n");
+	printf("||=======||=======||=======||||=======||=======||\n");
+	printf("||   0   ||       =        ||||  DEL  ||   ^   ||\n");
+	printf("||=======||=======||=======||||=======||=======||\n\n\n");
+	printf("Masukkan Operasi Perhitungan :\n\n"); scanf(" %s",input);
 	InfixToPostfix(input, postfix);
 	printf("\n");
 	ex = BuildExpressionTree(postfix);
