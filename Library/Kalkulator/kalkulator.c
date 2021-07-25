@@ -172,15 +172,19 @@ int mainMenu() {
 		switch(getchar()) {	
 		    case '1' :
 		    	kalkulatorMenu();
+		    	system("pause");
 				break;	
 			case '2':
 				kalkulatorProgrammerMenu();
+				system("pause");
 				break;
 			case '3'	:
 				petunjuk();
+				system("pause");
 				break;
 			case '4' :
 				about();
+				system("pause");
 				break;
 			case '5' :
 				system("cls");
@@ -189,8 +193,6 @@ int mainMenu() {
 			default :
 				puts("\nNomor yang Anda masukkan tidak valid!");
 		}
-		printf("\n");
-		system("PAUSE");
 		system("cls");
 	}
 }
