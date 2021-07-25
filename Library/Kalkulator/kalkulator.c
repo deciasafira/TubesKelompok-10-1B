@@ -106,25 +106,24 @@ void petunjuk(){
 	system("CLS");
 	printf("\n\t\t\t*** Cara Menggunakan Aplikasi ***\n");
 	printf("\n1. Bilangan yang digunakan dalam kalkulator ini adalah bilangan bulat. \n (bilangan negatif, nol, dan bilangan positif) dan bilangan desimal.");
-	printf("\n2. Operator yang dapat digunakan :");
-	printf("\t a) + (pertambahan)");
-	printf("\t b) - (pengurangan)");
-	printf("\t c) * atau x (pengkalian)");
-	printf("\t d) : atau / (pembagian)");
+	printf("\n2. Operator yang dapat digunakan :\n");
+	printf("\t a) + (pertambahan)\n");
+	printf("\t b) - (pengurangan)\n");
+	printf("\t c) * atau x (pengkalian)\n");
+	printf("\t d) : atau / (pembagian)\n");
 	printf("\t e) ^ (perpangkatan)");
 	printf("\n3. Dapat menambahkan '(' dan ')' ke dalam operasi perhitungan");
 	printf("\n4. Setiap perhitungan akan tersimpan pada riwayat kalkulator.");
 	printf("\n5. Setiap perhitungan yang error tidak akan dimasukan pada rekapan.");
 	printf("\n6. Riwayat perhitungan hanya dapat dihapus ketika user memilih menu hapus riwayat");
 	printf("\n\n");
-
 }
 
 void about(){
 	system("CLS");
 	printf("\n\t\t\t*** Tentang Aplikasi ***\n");
 	puts("Program aplikasi kalkulator ini dibuat oleh Kelompok Kalkulaten untuk memenuhi salah satu tugas besar");
-	puts("Struktur Data dan Algoritma Praktikum. Berikut anggota kalkulaten :\n")
+	puts("Struktur Data dan Algoritma Praktikum. Berikut anggota kalkulaten :\n");
 	puts("1. Caturiani Pratidina Bintari\n");
 	puts("2. Decia Safira Alfitri\n");
 	puts("3. Faizal Abdul Hakim\n");
@@ -142,7 +141,7 @@ int mainMenu() {
 		puts("\n==================== KALKULATOR KALKULATEN ===================");
 		puts("\n*** MENU ***\n");
 		puts("1. Kalkulator");
-		puts("2. Cara Menggunakan Aplikasi")
+		puts("2. Cara Menggunakan Aplikasi");
 		puts("3. Tentang");
 		puts("4. Exit");
 		puts("Masukkan pilihan sesuai nomor : ");
