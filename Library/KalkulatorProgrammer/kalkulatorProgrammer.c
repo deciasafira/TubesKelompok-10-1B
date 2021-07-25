@@ -4,7 +4,7 @@ void decToBiner(){
 	int a[10],n,i;
 	    
 	system("CLS");
-	printf("=============== DECIMAL TO BINAIR ===============\n\n");
+	printf("\n\t\t\t*** Decimal To Biner ***\n\n");
 	printf("Masukan Nilai Decimal Yang Ingin Diubah : ");    
 	scanf("%d",&n);    
 	for(i=0;n>0;i++){    
@@ -26,7 +26,7 @@ void decToOctal()
     int octalNumber[100], i = 1, j;
  
  	system("CLS");
-	printf("=============== DECIMAL TO OCTAL ===============\n\n");
+	printf("\n\t\t\t*** Decimal To Octal ***\n\n");
     printf("Masukan Nilai Decimal Yang Ingin Diubah : ");
     scanf("%ld", &decimalnum);
     quotient = decimalnum;
@@ -49,7 +49,7 @@ void decToHexa(){
     char H[20] = {'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'};
     
     system("CLS");
-	printf("=============== DECIMAL TO HEXADECIMAL ===============\n\n");
+	printf("\n\t\t\t*** Decimal To Hexadecimal ***\n\n");
     printf("Masukan Nilai Decimal Yang Ingin Diubah : ");
     scanf("%d", &d);
 
@@ -73,7 +73,7 @@ void binerToDec(){
     int num, binary_num, decimal_num = 0, base = 1, rem;  
     
     system("CLS");
-	printf("=============== BINER TO DECIMAL ===============\n\n");
+	printf("\n\t\t\t*** Biner To Decimal***\n\n");
     printf("Masukan kombinasi number 0 dan 1 Yang Ingin Diubah : ");
     scanf ("%d", &num); // accept the binary number (0s and 1s)  
   
@@ -99,7 +99,7 @@ void octalToDec(){
     int i = 0;
  
     system("CLS");
-	printf("=============== OCTAL TO DECIMAL ===============\n\n");
+	printf("\n\t\t\t*** Octal To Decimal ***\n\n");
     printf("Masukan kombinasi number 0 sampai 7 Yang Ingin Diubah : ");
     scanf("%ld", &octal);
     while (octal != 0)
@@ -119,7 +119,7 @@ void hexaToDec(){
     int i = 0, value, length;
     /* Get hexadecimal value from user */
     system("CLS");
-	printf("=============== HEXADECIMAL TO DECIMAL ===============\n\n");
+	printf("n\t\t\t*** Hexadecimal To Decimal ***\n\n\n");
 	printf("HEXADECIMAL NUMBER   = 0,1,2,3,4,5,6,7,8,9\n");
 	printf("HEXADECIMAL ALPHABET = A, B, C, D, E, F\n\n");
     printf("Masukan kombinasi number hexa Yang Ingin Diubah : ");

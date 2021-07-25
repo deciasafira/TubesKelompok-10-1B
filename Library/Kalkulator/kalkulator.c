@@ -133,7 +133,7 @@ void kalkulatorProgrammerMenu(){
 	while (repeat)
 	{
 		system("cls");
-		puts("\n==================== KALKULATOR PROGRAMMER ===================\n\n");
+		puts("\n\t\t\t*** Kalkulator Programmer***\n");
 		puts("1. Konversi Desimal Ke Biner");
 		puts("2. Konversi Desimal Ke Oktal");
 		puts("3. Konversi Desimal Ke Hexadecimal");
@@ -141,7 +141,7 @@ void kalkulatorProgrammerMenu(){
 		puts("5. Konversi Oktal Ke Desimal");
 		puts("6. Konversi Hexadecimal Ke Desimal");
 		puts("7. Kembali Ke Main Menu\n");
-		puts("Masukkan pilihan sesuai nomor : ");
+		puts("Masukkan nomor pilihan Anda : ");
 		switch (getchar())
 		{
 		case '1' :
@@ -181,8 +181,8 @@ int mainMenu() {
 	
 	while(i<=100) {
 		system("COLOR E1");
-		puts("\n==================== KALKULATOR KALKULATEN ===================");
-		puts("\n*** MENU ***\n");
+		puts("\n==================== WELCOME TO KALKULATOR KALKULATEN ===================");
+		puts("\n***** MENU *****\n");
 		puts("1. Kalkulator");		
 		puts("2. Kalkulator Programmer");
 		puts("3. Cara Menggunakan Aplikasi");
@@ -208,7 +208,7 @@ int mainMenu() {
 				break;
 			case '5' :
 				system("cls");
-				puts("\nTerima Kasih");
+				puts("\nTerima Kasih. Stay safe and healthy everyone^^. Salam Kalkulaten.");
 				return 0;
 			default :
 				puts("\nNomor yang Anda masukkan tidak valid!");
