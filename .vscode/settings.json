@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "kalkulator.h": "c",
+        "stacktree.h": "c",
+        "bintree.h": "c"
+    }
+}

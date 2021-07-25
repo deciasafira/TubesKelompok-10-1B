@@ -107,11 +107,11 @@ void petunjuk(){
 	printf("\n\t\t\t*** Cara Menggunakan Aplikasi ***\n");
 	printf("\n1. Bilangan yang digunakan dalam kalkulator ini adalah bilangan bulat. \n (bilangan negatif, nol, dan bilangan positif) dan bilangan desimal.");
 	printf("\n2. Operator yang dapat digunakan :");
-	printf("\t a) + (pertambahan)");
-	printf("\t b) - (pengurangan)");
-	printf("\t c) * atau x (pengkalian)");
-	printf("\t d) : atau / (pembagian)");
-	printf("\t e) ^ (perpangkatan)");
+	printf("\n a) + (pertambahan)");
+	printf("\n b) - (pengurangan)");
+	printf("\n c) * atau x (pengkalian)");
+	printf("\n d) : atau / (pembagian)");
+	printf("\n e) ^ (perpangkatan)");
 	printf("\n3. Dapat menambahkan '(' dan ')' ke dalam operasi perhitungan");
 	printf("\n4. Setiap perhitungan akan tersimpan pada riwayat kalkulator.");
 	printf("\n5. Setiap perhitungan yang error tidak akan dimasukan pada rekapan.");
@@ -130,6 +130,28 @@ void about(){
 	puts("3. Faizal Abdul Hakim\n");
 }
 
+
+
+void kalkulatorProgrammerMenu(){
+	int i;
+
+	while (i <= 5)
+	{
+		puts("\n==================== KALKULATOR PROGRAMMER ===================");
+		puts("1. Konversi Desimal Ke Biner");
+		switch (getchar())
+		{
+		case '1' :
+			//decToBiner();
+			break;
+		
+		default:
+			break;
+		}
+	}
+	
+}
+
 int mainMenu() {
 	/* Menampilkan menu utama aplikasi ini.			*/
 	/* I.S   : Sembarang.							*/
@@ -138,25 +160,29 @@ int mainMenu() {
 	int i;
 	
 	while(i<=100) {
-		//system("MODE 57,20");
+		system("COLOR E1");
 		puts("\n==================== KALKULATOR KALKULATEN ===================");
 		puts("\n*** MENU ***\n");
-		puts("1. Kalkulator");
-		puts("2. Cara Menggunakan Aplikasi");
-		puts("3. Tentang");
-		puts("4. Exit");
+		puts("1. Kalkulator");		
+		puts("2. Kalkulator Programmer");
+		puts("3. Cara Menggunakan Aplikasi");
+		puts("4. Tentang");
+		puts("5. Exit");
 		puts("Masukkan pilihan sesuai nomor : ");
 		switch(getchar()) {	
 		    case '1' :
 		    	kalkulatorMenu();
 				break;	
-			case '2'	:
+			case '2':
+				kalkulatorProgrammerMenu();
+				break;
+			case '3'	:
 				petunjuk();
 				break;
-			case '3' :
+			case '4' :
 				about();
 				break;
-			case '4' :
+			case '5' :
 				system("cls");
 				puts("\nTerima Kasih");
 				return 0;

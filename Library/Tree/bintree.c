@@ -125,17 +125,17 @@ int Priority(char x) {
 	/* I.S   : X terdefinisi.								*/
 	/* F.S   : Nilai prioritas X dikirimkan.				*/
 	
-    switch(x) {
-        case ')': return 0;
-        case '(': return 0;
-        case '+': return 1;
-        case '-': return 1;
-        case '*': return 2;
-        case 'x': return 2;
-        case '/': return 2;
-        case ':': return 2;
-		case '^': return 3;    
-    }
+		switch(x) {
+			case ')': return 0;
+			case '(': return 0;
+			case '+': return 1;
+			case '-': return 1;
+			case '*': return 2;
+			case 'x': return 2;
+			case '/': return 2;
+			case ':': return 2;
+			case '^': return 3;    
+		}
 }
 
 boolean isPriority(char a, char b) {
