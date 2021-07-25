@@ -8,7 +8,6 @@
 // Membuat sebuah Expression Tree dari ekspresi postfix.
 BinTree BuildExpressionTree(infotypeTree postfix);
 
-
 //Menampilkan menu untuk kalkulator.
 void kalkulatorMenu();
 
