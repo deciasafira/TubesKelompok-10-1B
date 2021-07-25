@@ -1,10 +1,7 @@
 #include "kalkulator.h"
 
 BinTree BuildExpressionTree(infotypeTree postfix) {
-	/* Membuat sebuah Expression Tree dari ekspresi postfix.	*/
-	/* I.S   : postfix terdefinisi.								*/
-	/* F.S   : Expression Tree dikembalikan.					*/
-	
+	//Membuat sebuah Expression Tree dari ekspresi postfix.	
 	int i=0, j, k; 
 	stackTree StackT; //
 	BinTree ExpTree, Right, Left;
@@ -86,9 +83,7 @@ BinTree BuildExpressionTree(infotypeTree postfix) {
 }
 
 void kalkulatorMenu() {
-	/* Menampilkan menu untuk kalkulator.			*/
-	/* I.S   : Sembarang.							*/
-	/* F.S   : Menu untuk kalkulator ditampilkan.	*/
+	// Menampilkan menu untuk kalkulator
 	
 	String input, postfix;
 	BinTree ex;
@@ -103,6 +98,7 @@ void kalkulatorMenu() {
 }
 
 void petunjuk(){
+	//Menampilkan petunjuk penggunaan aplikasi
 	system("CLS");
 	printf("\n\t\t\t*** Cara Menggunakan Aplikasi ***\n");
 	printf("\n1. Bilangan yang digunakan dalam kalkulator ini adalah bilangan bulat. \n (bilangan negatif, nol, dan bilangan positif) dan bilangan desimal.");
@@ -120,16 +116,18 @@ void petunjuk(){
 }
 
 void about(){
+	// Menampilkan informasi mengenai aplikasi 
 	system("CLS");
 	printf("\n\t\t\t*** Tentang Aplikasi ***\n");
 	puts("Program aplikasi kalkulator ini dibuat oleh Kelompok Kalkulaten untuk memenuhi salah satu tugas besar");
 	puts("Struktur Data dan Algoritma Praktikum. Berikut anggota kalkulaten :\n");
-	puts("1. Caturiani Pratidina Bintari\n");
-	puts("2. Decia Safira Alfitri\n");
-	puts("3. Faizal Abdul Hakim\n");
+	puts("1. Caturiani Pratidina Bintari");
+	puts("2. Decia Safira Alfitri");
+	puts("3. Faizal Abdul Hakim");
 }
 
 void kalkulatorProgrammerMenu(){
+	//fitur aplikasi kalkulator programmer
 	bool repeat = true;
 
 	while (repeat)
@@ -157,9 +155,7 @@ void kalkulatorProgrammerMenu(){
 }
 
 int mainMenu() {
-	/* Menampilkan menu utama aplikasi ini.			*/
-	/* I.S   : Sembarang.							*/
-	/* F.S   : Menu utama aplikasi ditampilkan.		*/
+	//Menampilkan menu utama aplikasi ini
 	
 	int i = 0;
 	
