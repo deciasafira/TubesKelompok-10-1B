@@ -89,8 +89,17 @@ void kalkulatorMenu() {
 	BinTree ex;
 	
 	system("cls");
-	puts("\n\t\t\t*** Kalkulator ***\n");
-	printf("LAKUKAN PERHITUNGAN :\n\n"); scanf(" %s",input);
+	puts("\n\t\t*** Kalkulator ***\n\n");
+	printf("||=======||=======||=======||||=======||=======||\n");
+	printf("||   1   ||   2   ||   3   ||||  Enter to back ||\n");
+	printf("||=======||=======||=======||||=======||=======||\n");
+	printf("||   4   ||   5   ||   6   ||||   *   ||   /   ||\n");
+	printf("||=======||=======||=======||||=======||=======||\n");
+	printf("||   7   ||   8   ||   9   ||||   +   ||   -   ||\n");
+	printf("||=======||=======||=======||||=======||=======||\n");
+	printf("||   0   ||       =        ||||  DEL  ||   ^   ||\n");
+	printf("||=======||=======||=======||||=======||=======||\n\n\n");
+	printf("Masukkan Operasi Perhitungan :\n\n"); scanf(" %s",input);
 	InfixToPostfix(input, postfix);
 	printf("\n");
 	ex = BuildExpressionTree(postfix);
@@ -118,12 +127,12 @@ void petunjuk(){
 void about(){
 	// Menampilkan informasi mengenai aplikasi 
 	system("CLS");
-	printf("\n\t\t\t*** Tentang Aplikasi ***\n");
-	puts("Program aplikasi kalkulator ini dibuat oleh Kelompok Kalkulaten untuk memenuhi salah satu tugas besar");
-	puts("Struktur Data dan Algoritma Praktikum. Berikut anggota kalkulaten :\n");
+	printf("\n\t\t\t*** Tentang Aplikasi ***\n\n");
+	puts("Program aplikasi kalkulator ini dibuat oleh Kelompok Kalkulaten untuk memenuhi salah satu");
+	puts("tugas besar Struktur Data dan Algoritma Praktikum. Berikut anggota kalkulaten :");
 	puts("1. Caturiani Pratidina Bintari");
 	puts("2. Decia Safira Alfitri");
-	puts("3. Faizal Abdul Hakim");
+	puts("3. Faizal Abdul Hakim\n");
 }
 
 void kalkulatorProgrammerMenu(){
@@ -133,12 +142,15 @@ void kalkulatorProgrammerMenu(){
 	while (repeat)
 	{
 		system("cls");
-		puts("\n==================== KALKULATOR PROGRAMMER ===================\n\n");
+		puts("\n\t\t\t*** Kalkulator Programmer***\n");
 		puts("1. Konversi Desimal Ke Biner");
 		puts("2. Konversi Desimal Ke Oktal");
 		puts("3. Konversi Desimal Ke Hexadecimal");
-		puts("4. Kembali Ke Main Menu\n");
-		puts("Masukkan pilihan sesuai nomor : ");
+		puts("4. Konversi Biner Ke Desimal");
+		puts("5. Konversi Oktal Ke Desimal");
+		puts("6. Konversi Hexadecimal Ke Desimal");
+		puts("7. Kembali Ke Main Menu\n");
+		puts("Masukkan nomor pilihan Anda : ");
 		switch (getchar())
 		{
 		case '1' :
@@ -151,6 +163,15 @@ void kalkulatorProgrammerMenu(){
 			decToHexa();
 			break;
 		case '4' :
+			binerToDec();
+			break;
+		case '5' :
+			octalToDec();
+			break;	
+		case '6' :
+			hexaToDec();
+			break;	
+		case '7' :
 			system("cls");
 			repeat = false;
 			mainMenu();
@@ -169,14 +190,14 @@ int mainMenu() {
 	
 	while(i<=100) {
 		system("COLOR E1");
-		puts("\n==================== KALKULATOR KALKULATEN ===================");
-		puts("\n*** MENU ***\n");
+		puts("\n==================== WELCOME TO KALKULATOR KALKULATEN ===================");
+		puts("\n***** MENU *****\n");
 		puts("1. Kalkulator");		
 		puts("2. Kalkulator Programmer");
 		puts("3. Cara Menggunakan Aplikasi");
 		puts("4. Tentang");
 		puts("5. Exit");
-		puts("Masukkan pilihan sesuai nomor : ");
+		puts("\nMasukkan pilihan sesuai nomor : ");
 		switch(getchar()) {	
 		    case '1' :
 		    	kalkulatorMenu();
@@ -196,7 +217,7 @@ int mainMenu() {
 				break;
 			case '5' :
 				system("cls");
-				puts("\nTerima Kasih");
+				puts("\nTerima Kasih. Stay safe and healthy everyone^^. Salam Kalkulaten.");
 				return 0;
 			default :
 				puts("\nNomor yang Anda masukkan tidak valid!");
