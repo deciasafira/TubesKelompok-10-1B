@@ -87,6 +87,12 @@ void kalkulatorMenu() {
 	
 	String input, postfix;
 	BinTree ex;
+	float hasil;
+	
+	char buff[255];
+	FILE *riwayat;
+	
+	riwayat=fopen("riwayat.txt", "a+");
 	
 	system("cls");
 	puts("\n\t\t*** Kalkulator ***\n\n");
@@ -103,7 +109,17 @@ void kalkulatorMenu() {
 	InfixToPostfix(input, postfix);
 	printf("\n");
 	ex = BuildExpressionTree(postfix);
-	printf("= %.2f\n", CalculateTree(ex)); 
+	hasil = CalculateTree(ex);
+	printf("= %.2f\n", hasil); 
+	
+	if(riwayat == NULL){
+		perror("Error opening file.");
+	}else{
+		fprintf(riwayat, "Input = %s\n", input);
+		fprintf(riwayat, "Hasil = %.2f\n\n", hasil);
+	}
+
+	fclose(riwayat);
 }
 
 void petunjuk(){
@@ -122,6 +138,34 @@ void petunjuk(){
 	printf("\n5. Setiap perhitungan yang error tidak akan dimasukan pada rekapan.");
 	printf("\n6. Riwayat perhitungan hanya dapat dihapus ketika user memilih menu hapus riwayat");
 	printf("\n\n");
+}
+
+void riwayatKalkulator(){
+	char buff[255];
+	FILE *riwayat;
+	
+	riwayat=fopen("riwayat.txt", "r");
+	int c = getc(riwayat);
+	
+	system("CLS");
+	puts("\n==================== RIWAYAT KALKULATOR ===================");
+	
+	if(riwayat == NULL){
+		printf("Riwayat Kosong ! \n");
+	}else{
+		while(c != EOF){
+			putchar(c);
+			c = getc(riwayat);
+		}	
+	}
+}
+
+void hapusRiwayatKalkulator(){
+	FILE *riwayat;
+	riwayat = fopen("riwayat.txt", "w");
+	
+	system("CLS");
+	printf("Riwayat Telah Dihapus\n");
 }
 
 void about(){
@@ -195,8 +239,10 @@ int mainMenu() {
 		puts("1. Kalkulator");		
 		puts("2. Kalkulator Programmer");
 		puts("3. Cara Menggunakan Aplikasi");
-		puts("4. Tentang");
-		puts("5. Exit");
+		puts("4. Riwayat");
+		puts("5. Hapus Riwayat");
+		puts("6. Tentang");
+		puts("7. Exit");
 		puts("\nMasukkan pilihan sesuai nomor : ");
 		switch(getchar()) {	
 		    case '1' :
@@ -212,10 +258,18 @@ int mainMenu() {
 				system("pause");
 				break;
 			case '4' :
-				about();
+				riwayatKalkulator();
 				system("pause");
 				break;
 			case '5' :
+				hapusRiwayatKalkulator();
+				system("pause");
+				break;
+			case '6' :
+				about();
+				system("pause");
+				break;
+			case '7' :
 				system("cls");
 				puts("\nTerima Kasih. Stay safe and healthy everyone^^. Salam Kalkulaten.");
 				return 0;

@@ -101,15 +101,11 @@ void binerToDec(){
     
     system("CLS");
 	printf("\n  *** Biner To Decimal***\n\n");
-	printf("||=======||=======||=======||\n");
-	printf("||   1   ||   2   ||   3   ||\n");
-	printf("||=======||=======||=======||\n");
-	printf("||   4   ||   5   ||   6   ||\n");
-	printf("||=======||=======||=======||\n");
-	printf("||   7   ||   8   ||   9   ||\n");
-	printf("||=======||=======||=======||\n");
-	printf("||   0   ||     DECIMAL    ||\n");
-	printf("||=======||=======||=======||\n\n\n");
+	printf("||========== || ===========||\n");
+	printf("||     0     ||      1     ||\n");
+	printf("||========== || ===========||\n");
+	printf("||         DECIMAL         ||\n");
+	printf("||========== || ===========||\n\n\n");
     printf("Masukan kombinasi number 0 dan 1 Yang Ingin Diubah : ");
     scanf ("%d", &num); // accept the binary number (0s and 1s)  
   

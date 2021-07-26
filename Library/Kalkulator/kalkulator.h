@@ -20,4 +20,10 @@ void About();
 //Menu utama kalkulator
 int mainMenu();
 
+// Riwayat Kalkulator
+void riwayatKalkulator();
+
+// Hapus Riwayat Kalkulator
+void hapusRiwayatKalkulator();
+
 #endif
