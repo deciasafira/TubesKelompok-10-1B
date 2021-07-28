@@ -141,6 +141,7 @@ void petunjuk(){
 }
 
 void riwayatKalkulator(){
+	//menampilkan riwayar perhitungan kalkulator
 	char buff[255];
 	FILE *riwayat;
 	
@@ -148,7 +149,7 @@ void riwayatKalkulator(){
 	int c = getc(riwayat);
 	
 	system("CLS");
-	puts("\n==================== RIWAYAT KALKULATOR ===================");
+	puts("\n\t\t\t*** Riwayat Kalkulator ***\n");
 	
 	if(riwayat == NULL){
 		printf("Riwayat Kosong ! \n");
@@ -161,6 +162,7 @@ void riwayatKalkulator(){
 }
 
 void hapusRiwayatKalkulator(){
+	//menghapus riwayat
 	FILE *riwayat;
 	riwayat = fopen("riwayat.txt", "w");
 	

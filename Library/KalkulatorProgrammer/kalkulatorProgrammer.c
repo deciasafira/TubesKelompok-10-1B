@@ -161,15 +161,15 @@ void hexaToDec(){
     /* Get hexadecimal value from user */
     system("CLS");
 	printf(" *** Hexadecimal To Decimal ***\n\n\n");
-	printf("||=======||=======||=======||\n");
-	printf("||   1   ||   2   ||   3   ||\n");
-	printf("||=======||=======||=======||\n");
-	printf("||   4   ||   5   ||   6   ||\n");
-	printf("||=======||=======||=======||\n");
-	printf("||   7   ||   8   ||   9   ||\n");
-	printf("||=======||=======||=======||\n");
-	printf("||   0   ||     DECIMAL    ||\n");
-	printf("||=======||=======||=======||\n\n\n");
+	printf("||=======||=======||=======||=======||=======||\n");
+	printf("||   1   ||   2   ||   3   ||   A   ||   B   ||\n");
+	printf("||=======||=======||=======||=======||=======||\n");
+	printf("||   4   ||   5   ||   6   ||   C   ||   D   ||\n");
+	printf("||=======||=======||=======||=======||=======||\n");
+	printf("||   7   ||   8   ||   9   ||   E   ||   F   ||\n");
+	printf("||=======||=======||=======||=======||=======||\n");
+	printf("||   0   ||     		 DECIMAL   		     ||\n");
+	printf("||=======||=======||=======||=======||=======||\n\n\n");
 	printf("HEXADECIMAL NUMBER   = 0,1,2,3,4,5,6,7,8,9\n");
 	printf("HEXADECIMAL ALPHABET = A, B, C, D, E, F\n\n");
     printf("Masukan kombinasi number hexa Yang Ingin Diubah : ");
