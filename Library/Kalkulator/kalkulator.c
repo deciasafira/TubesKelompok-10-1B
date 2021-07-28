@@ -141,7 +141,7 @@ void petunjuk(){
 }
 
 void riwayatKalkulator(){
-	//menampilkan riwayar perhitungan kalkulator
+	//menampilkan riwayat perhitungan kalkulator
 	char buff[255];
 	FILE *riwayat;
 	

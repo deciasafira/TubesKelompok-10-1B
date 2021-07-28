@@ -168,7 +168,7 @@ void hexaToDec(){
 	printf("||=======||=======||=======||=======||=======||\n");
 	printf("||   7   ||   8   ||   9   ||   E   ||   F   ||\n");
 	printf("||=======||=======||=======||=======||=======||\n");
-	printf("||   0   ||     		 DECIMAL   		     ||\n");
+	printf("||   0   ||       ||     DECIMAL    ||       ||\n");
 	printf("||=======||=======||=======||=======||=======||\n\n\n");
 	printf("HEXADECIMAL NUMBER   = 0,1,2,3,4,5,6,7,8,9\n");
 	printf("HEXADECIMAL ALPHABET = A, B, C, D, E, F\n\n");
